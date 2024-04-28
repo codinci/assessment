@@ -1,0 +1,18 @@
+[debug] [2024-04-27T20:01:07.692Z] ----------------------------------------------------------------------
+[debug] [2024-04-27T20:01:07.728Z] Command:       /home/davi3/.nvm/versions/node/v20.12.2/bin/node /home/davi3/.nvm/versions/node/v20.12.2/bin/firebase login
+[debug] [2024-04-27T20:01:07.741Z] CLI Version:   13.7.5
+[debug] [2024-04-27T20:01:07.742Z] Platform:      linux
+[debug] [2024-04-27T20:01:07.742Z] Node Version:  v20.12.2
+[debug] [2024-04-27T20:01:07.743Z] Time:          Sat Apr 27 2024 23:01:07 GMT+0300 (East Africa Time)
+[debug] [2024-04-27T20:01:07.743Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-27T20:01:07.758Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2024-04-27T20:01:09.332Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-04-27T20:01:09.354Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=264809648&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
