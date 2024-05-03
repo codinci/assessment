@@ -69,21 +69,15 @@ const AlbumPage: React.FC  = () => {
 	return (
 		<Layout>
 			<h1 className="text-lg font-bold my-4 text-center ">{album?.title} Photo Album</h1>
-			<ul className="space-y-2 mb-4">
+			<div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 mx-4">
 				{photos.length > 0 ? (
 					photos.map((photo) => (
-						<li
-							key={photo.id}
-							className="bg-white rounded-md shadow-md p-4 mx-4 transition-colors duration-300 hover:bg-sky-500 hover:text-white cursor-pointer"
-						>
-							<p className="text-md text-center font-semibold">{photo.title}</p>
-						</li>
+						<PhotoCard key={photo.id} image={photo}/>
 					))
 				) : (
 					<p className="text-red-400">Album currently has no photos</p>
 				)}
-			</ul>
-
+			</div>
 		</Layout>
 	)
 }
