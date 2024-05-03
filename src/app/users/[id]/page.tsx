@@ -1,8 +1,6 @@
 'use client'
 
 import { usePathname, useRouter } from 'next/navigation';
-import {  onAuthStateChanged } from "firebase/auth";
-import { auth } from '@/app/firebase/config';
 import Layout from '@/app/components/Layout';
 import { useEffect, useState } from "react";
 
@@ -25,11 +23,6 @@ const UserPage: React.FC  = () => {
 	const [albums, setAlbums] = useState<Album[] | null>(null);
 	const router = useRouter();
 
-	onAuthStateChanged(auth, (authenticatedUser) => {
-		if (!authenticatedUser) {
-			return router.push('/');
-		}
-	});
 
 
 	useEffect(() => {

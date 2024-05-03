@@ -1,10 +1,8 @@
 'use client'
 
-import {  onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Layout from '../components/Layout';
-import { auth } from '../firebase/config';
 
 interface User {
   id: number;
@@ -16,13 +14,6 @@ interface User {
 const Home: React.FC = () => {
 	const [users, setUsers] = useState<User[]>([]);
 	const router = useRouter();
-
-	onAuthStateChanged(auth, (user) => {
-		if (!user) {
-			return router.push('/');
-		}
-	});
-
 
 	useEffect(() => {
 		// Fetch users and albums data
